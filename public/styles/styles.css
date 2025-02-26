@@ -1,0 +1,145 @@
+body {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background: linear-gradient(135deg, #A0C8FF, #07142c, #3f70cb); 
+    background-size: 400% 400%; 
+    animation: gradientTransition 15s ease infinite; 
+    font-family: "Helvetica Neue", sans-serif;
+    margin: 0;
+    height: 100vh; 
+    overflow-x: hidden; 
+}
+
+@keyframes gradientTransition {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.main {
+    width: 80%; 
+    max-width: 900px; 
+    background-color: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px); 
+    border-radius: 15px;
+    padding: 30px; 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); 
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Website-name {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: white;
+    font-size: 3rem; 
+    font-family: "Ubuntu", serif;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form input[type="search"] {
+    width: 70%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #45658b;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.cities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.city {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    height: 250px;
+    width: 170px;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.city h1 {
+    color: #020d23;
+    margin: 0;
+    font-size: 28px;
+}
+
+.city h2 {
+    font-size: 35px;
+    margin: 0;
+}
+
+.city h3 {
+    font-size: 13px;
+    margin: 0;
+}
+
+.city span {
+    font-size: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .main {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .search input[type="search"] {
+        width: 60%;
+    }
+
+    .city {
+        width: 150px; 
+        height: auto;
+    }
+}

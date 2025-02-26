@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <style>
+        body {
+            color: white;
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            background: linear-gradient(135deg, #A0C8FF, #07142c, #3f70cb); 
+            background-size: 400% 400%; 
+            animation: gradientTransition 15s ease infinite; 
+            font-family: "Helvetica Neue", sans-serif; 
+            margin: 0;
+            height: 100vh;
+            overflow-x: hidden; 
+        }
+
+
+        @keyframes gradientTransition {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        .main {
+            width: 80%; 
+            max-width: 900px; 
+            background-color: rgba(255, 255, 255, 0.1); 
+            backdrop-filter: blur(15px); 
+            -webkit-backdrop-filter: blur(15px); 
+            border-radius: 15px; 
+            padding: 30px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); 
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        button{
+            padding: 10px 20px;
+            background-color: #c0d0e3;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="cont">
+            <h1>Error</h1>
+            <p><%= message %></p>
+            <button> <a href="/" style="text-decoration: none; color:black">Go Back</a></button>
+        </div>
+    </div>
+    
+</body>
+</html>
