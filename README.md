@@ -8,7 +8,7 @@ SkyWise is a weather website that provides real-time weather updates for any cit
 
 ## Installation & Setup  
 
-1. Clone the repository:  
+1. Clone the repository
 2. Go to project directory:
    cd SkyWise-Weather-Website
 3. Install dependencies using command:
